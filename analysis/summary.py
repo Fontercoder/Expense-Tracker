@@ -46,10 +46,10 @@ def generate_summary_report():
     monthly = monthly_summary(df)
     overall = overall_summary(df)
 
-    print(f"📅 Today       : ₹{daily}")
-    print(f"📆 This Week   : ₹{weekly}")
-    print(f"🗓️  This Month  : ₹{monthly}")
-    print(f"📈 Overall     : ₹{overall}")
+    print(f" Today       : ₹{daily}")
+    print(f" This Week   : ₹{weekly}")
+    print(f" This Month  : ₹{monthly}")
+    print(f" Overall     : ₹{overall}")
 
     # Prepare export DataFrame
     summary_df = pd.DataFrame([{
@@ -65,7 +65,7 @@ def generate_summary_report():
     export_path = f"data/reports/summary_report_{datetime.today().strftime('%Y%m%d')}.csv"
     summary_df.to_csv(export_path, index=False)
 
-    print(f"\n✅ Report exported to: {export_path}")
+    print(f"\nReport exported to: {export_path}")
 
 if __name__ == "__main__":
     generate_summary_report()

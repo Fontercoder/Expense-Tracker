@@ -55,7 +55,7 @@ def visualise_expenses():
     if df.empty:
         return
 
-    print("\n📈 Chart Options:")
+    print("\n Chart Options:")
     print("1. Pie Chart - Category wise")
     print("2. Bar Chart - Monthly")
     print("3. Bar Chart - Weekly")
@@ -73,6 +73,3 @@ def visualise_expenses():
         show_line_chart(df)
     else:
         print(" Invalid choice!")
-
-if __name__ == "__main__":
-    visualise_expenses()

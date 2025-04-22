@@ -26,7 +26,7 @@ def check_overall_budget(exp_df, budget_df):
     if total_spent > overall_budget:
         print(" ALERT: You’ve exceeded your overall budget!")
     else:
-        print("✅ You're within your overall budget.")
+        print("You're within your overall budget.")
 
 def check_category_budgets(exp_df, budget_df):
     print("\n Category-wise Budget Check:")
@@ -37,7 +37,7 @@ def check_category_budgets(exp_df, budget_df):
         limit = row['Amount']
         spent = exp_df[exp_df['Category'] == category]['Amount'].sum()
 
-        status = "✅ OK" if spent <= limit else "Budget limit has Over"
+        status = "OK" if spent <= limit else "Budget limit has Over"
         print(f" - {category:15}: Spent ₹{spent:>6} / Budget ₹{limit:<6} => {status}")
 
 def checkBudget():

@@ -40,6 +40,3 @@ def log_expense():
 
     updated_data.to_csv(file_path, index=False)
     print(f"\n Expense logged: ₹{amount} under '{category}' on {date}")
-
-# if __name__ == "__main__":
-#     log_expense()
